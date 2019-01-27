@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomizationTest", "Random
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SummonAnalysist", "SummonAnalysist\SummonAnalysist.csproj", "{0B9F8599-9CF8-4D51-B818-3C94EED14F46}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SummonTracker", "SummonTracker\SummonTracker.csproj", "{12A5DCBE-1BA2-4C03-9FFC-CC7CEA656B80}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{0B9F8599-9CF8-4D51-B818-3C94EED14F46}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B9F8599-9CF8-4D51-B818-3C94EED14F46}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0B9F8599-9CF8-4D51-B818-3C94EED14F46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12A5DCBE-1BA2-4C03-9FFC-CC7CEA656B80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12A5DCBE-1BA2-4C03-9FFC-CC7CEA656B80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12A5DCBE-1BA2-4C03-9FFC-CC7CEA656B80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12A5DCBE-1BA2-4C03-9FFC-CC7CEA656B80}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
