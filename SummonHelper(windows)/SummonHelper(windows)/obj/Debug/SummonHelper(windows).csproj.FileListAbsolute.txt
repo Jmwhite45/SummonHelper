@@ -8,3 +8,17 @@ C:\Projects\Summon Helper(Windows)\SummonHelper(windows)\SummonHelper(windows)\b
 C:\Projects\Summon Helper(Windows)\SummonHelper(windows)\SummonHelper(windows)\bin\Debug\SummonHelper(windows).pdb
 C:\Projects\Summon Helper(Windows)\SummonHelper(windows)\SummonHelper(windows)\obj\Debug\SummonHelper(windows).exe
 C:\Projects\Summon Helper(Windows)\SummonHelper(windows)\SummonHelper(windows)\obj\Debug\SummonHelper(windows).pdb
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\SummonHelper(windows)\bin\Debug\SummonHelper(windows).exe.config
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\SummonHelper(windows)\bin\Debug\SummonHelper(windows).exe.manifest
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\SummonHelper(windows)\bin\Debug\SummonHelper(windows).application
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\SummonHelper(windows)\bin\Debug\SummonHelper(windows).exe
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\SummonHelper(windows)\bin\Debug\SummonHelper(windows).pdb
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\SummonHelper(windows)\obj\Debug\SummonHelper(windows).csprojAssemblyReference.cache
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\SummonHelper(windows)\obj\Debug\SummonHelper_windows_.Form1.resources
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\SummonHelper(windows)\obj\Debug\SummonHelper_windows_.Properties.Resources.resources
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\SummonHelper(windows)\obj\Debug\SummonHelper(windows).csproj.GenerateResource.cache
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\SummonHelper(windows)\obj\Debug\SummonHelper(windows).csproj.CoreCompileInputs.cache
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\SummonHelper(windows)\obj\Debug\SummonHelper(windows).exe.manifest
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\SummonHelper(windows)\obj\Debug\SummonHelper(windows).application
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\SummonHelper(windows)\obj\Debug\SummonHelper(windows).exe
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\SummonHelper(windows)\obj\Debug\SummonHelper(windows).pdb
