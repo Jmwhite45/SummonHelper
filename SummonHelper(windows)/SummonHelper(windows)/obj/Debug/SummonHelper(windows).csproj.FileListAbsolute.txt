@@ -1,0 +1,10 @@
+C:\Projects\Summon Helper(Windows)\SummonHelper(windows)\SummonHelper(windows)\obj\Debug\SummonHelper(windows).csprojAssemblyReference.cache
+C:\Projects\Summon Helper(Windows)\SummonHelper(windows)\SummonHelper(windows)\obj\Debug\SummonHelper_windows_.Form1.resources
+C:\Projects\Summon Helper(Windows)\SummonHelper(windows)\SummonHelper(windows)\obj\Debug\SummonHelper_windows_.Properties.Resources.resources
+C:\Projects\Summon Helper(Windows)\SummonHelper(windows)\SummonHelper(windows)\obj\Debug\SummonHelper(windows).csproj.GenerateResource.cache
+C:\Projects\Summon Helper(Windows)\SummonHelper(windows)\SummonHelper(windows)\obj\Debug\SummonHelper(windows).csproj.CoreCompileInputs.cache
+C:\Projects\Summon Helper(Windows)\SummonHelper(windows)\SummonHelper(windows)\bin\Debug\SummonHelper(windows).exe.config
+C:\Projects\Summon Helper(Windows)\SummonHelper(windows)\SummonHelper(windows)\bin\Debug\SummonHelper(windows).exe
+C:\Projects\Summon Helper(Windows)\SummonHelper(windows)\SummonHelper(windows)\bin\Debug\SummonHelper(windows).pdb
+C:\Projects\Summon Helper(Windows)\SummonHelper(windows)\SummonHelper(windows)\obj\Debug\SummonHelper(windows).exe
+C:\Projects\Summon Helper(Windows)\SummonHelper(windows)\SummonHelper(windows)\obj\Debug\SummonHelper(windows).pdb
