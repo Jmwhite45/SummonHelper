@@ -8,6 +8,8 @@ namespace SummonHelper_windows_
 {
     public class Atk
     {
+        int id;
+
         int atkRoll;
         int otherAtkRoll;
 
@@ -21,8 +23,9 @@ namespace SummonHelper_windows_
         public int damTotal;
         RollTypes type;
 
-        public Atk(int AtkMod, int NumDice, int Dice, int DamMod)
+        public Atk(int ID, int AtkMod, int NumDice, int Dice, int DamMod)
         {
+            id = ID;
             atkMod = AtkMod;
             numDice = NumDice;
             dice = Dice;
@@ -75,20 +78,20 @@ namespace SummonHelper_windows_
 
         public override string ToString()
         {
-            string ret = "";
+            string ret = id+". \t";
             int roll = atkTotal-atkMod;
 
             if (roll == 20)
             {
-                ret = "Nat20("+ atkTotal + ")";
+                ret += "Nat20("+ atkTotal + ")";
             }
             else if (roll == 1)
             {
-                ret = "Nat1(" + atkTotal + ")";
+                ret += "Nat1(" + atkTotal + ")";
             }
             else
             {
-                ret = atkTotal.ToString();
+                ret += atkTotal.ToString();
             }
 
             if((type == RollTypes.advantage)||(type == RollTypes.disadvantage))

@@ -34,7 +34,7 @@ namespace SummonHelper_windows_
 
             for (int i = 0; i<atkArray.Length; i++)
            {
-                Atk atk = new Atk((int)atkRollMod.Value, (int)damDiceMod.Value, (int)diceType.Value, (int)damMod.Value);
+                Atk atk = new Atk(i+1, (int)atkRollMod.Value, (int)damDiceMod.Value, (int)diceType.Value, (int)damMod.Value);
                 atk.changeRollType(rolltwo());
                 atk.rollAtk(rnd);
                 atk.rollDam(rnd);
@@ -53,7 +53,7 @@ namespace SummonHelper_windows_
             foreach(Atk atk in atks)
             {
                 damage += atk.damTotal;
-                val += i + ". \t" + atk.ToString() + "  \t Grand Damage: " + damage + "\r\n";
+                val += atk.ToString() + "  \t Grand Damage: " + damage + "\r\n";
                 i++;
             }
             damOutput.Text = val;

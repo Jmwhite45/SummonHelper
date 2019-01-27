@@ -13,7 +13,7 @@ namespace SummonHelper_windows_.PresetData
            {
             List<Preset> ret = new List<Preset>();
 
-            Special none = new Special("None", "None", new Atk(0, 0,0,0));
+            Special none = new Special("None", "None", new Atk(0,0, 0,0,0));
             Special PackTactics = new Special("Pack Tactics", "advantage", null);
 
             ret.Add(new Preset("allosaurus(Bite)",1,6,2,10,4));
@@ -28,7 +28,7 @@ namespace SummonHelper_windows_.PresetData
             ret.Add(new Preset("Black Bear(Bite)",4,4,1,6,2));
             ret.Add(new Preset("Black Bear(Claws)",4,4,2,4,2));
             ret.Add(new Preset("Blood Hawk",8,4,1,4,2, PackTactics));
-            ret.Add(new Preset("Boar",8,3,1,6,1, new Special("Charge", "Must move 20, str DC 11", new Atk(0,0,0,0))));
+            ret.Add(new Preset("Boar",8,3,1,6,1, new Special("Charge", "Must move 20, str DC 11", new Atk(0,0,0,0,0))));
             ret.Add(new Preset("Brown Bear(Bite)",2,6,1,8,4));
             ret.Add(new Preset("Brown Bear(Claw)",2,6,2,6,4));
             ret.Add(new Preset("Camel",8,5,1,4,0));

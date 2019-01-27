@@ -25,7 +25,7 @@ namespace SummonHelper_windows_.PresetData
             numDice = NumDice;
             diceType = DiceType;
             damMod = DamMod;
-            special = new Special("","",new Atk(0,0,0,0));
+            special = new Special("","",new Atk(0,0,0,0,0));
         }
         public Preset(string Name, int Count, int AtkMod, int NumDice, int DiceType, int DamMod, Special Special)
         {
