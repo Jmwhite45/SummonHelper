@@ -12,3 +12,21 @@ C:\Projects\Summon Helper(Windows)\SummonHelper(windows)\RandomizationTest\bin\D
 C:\Projects\Summon Helper(Windows)\SummonHelper(windows)\RandomizationTest\bin\Debug\SummonHelper(windows).pdb
 C:\Projects\Summon Helper(Windows)\SummonHelper(windows)\RandomizationTest\bin\Debug\SummonHelper(windows).exe.config
 C:\Projects\Summon Helper(Windows)\SummonHelper(windows)\RandomizationTest\obj\Debug\RandomizationTest.csproj.CopyComplete
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\RandomizationTest\obj\Debug\RandomizationTest.csprojAssemblyReference.cache
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\RandomizationTest\obj\Debug\RandomizationTest.Form1.resources
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\RandomizationTest\obj\Debug\RandomizationTest.Properties.Resources.resources
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\RandomizationTest\obj\Debug\RandomizationTest.csproj.GenerateResource.cache
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\RandomizationTest\obj\Debug\RandomizationTest.csproj.CoreCompileInputs.cache
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\RandomizationTest\obj\Debug\RandomizationTest.exe
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\RandomizationTest\obj\Debug\RandomizationTest.pdb
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\RandomizationTest\bin\Debug\RandomizationTest.exe.config
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\RandomizationTest\bin\Debug\RandomizationTest.exe.manifest
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\RandomizationTest\bin\Debug\RandomizationTest.application
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\RandomizationTest\bin\Debug\RandomizationTest.exe
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\RandomizationTest\bin\Debug\RandomizationTest.pdb
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\RandomizationTest\bin\Debug\SummonHelper(windows).exe
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\RandomizationTest\bin\Debug\SummonHelper(windows).pdb
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\RandomizationTest\bin\Debug\SummonHelper(windows).exe.config
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\RandomizationTest\obj\Debug\RandomizationTest.exe.manifest
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\RandomizationTest\obj\Debug\RandomizationTest.application
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\RandomizationTest\obj\Debug\RandomizationTest.csproj.CopyComplete

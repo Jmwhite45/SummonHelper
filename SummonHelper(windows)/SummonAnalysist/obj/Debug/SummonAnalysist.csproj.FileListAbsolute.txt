@@ -26,3 +26,7 @@ C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\SummonAnalysi
 C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\SummonAnalysist\obj\Debug\SummonAnalysist.csproj.CopyComplete
 C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\SummonAnalysist\obj\Debug\SummonAnalysist.exe
 C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\SummonAnalysist\obj\Debug\SummonAnalysist.pdb
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\SummonAnalysist\bin\Debug\SummonAnalysist.exe.manifest
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\SummonAnalysist\bin\Debug\SummonAnalysist.application
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\SummonAnalysist\obj\Debug\SummonAnalysist.exe.manifest
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\SummonAnalysist\obj\Debug\SummonAnalysist.application

@@ -48,7 +48,7 @@ namespace RandomizationTest
 
         public decimal Test(int num)
         {
-            Atk a = new Atk(0, 0,0,0);
+            Atk a = new Atk(0,0,0,0,0);
             Random rnd = new Random();
             int rounds = (int)Rounds.Value;
             int[] results = new int[rounds];
