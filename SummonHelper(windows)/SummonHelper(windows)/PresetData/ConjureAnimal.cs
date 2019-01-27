@@ -125,6 +125,21 @@ namespace SummonHelper_windows_.PresetData
             ret.Add(new Preset("Winter Wolf",0,6,2,6,4));
             ret.Add(new Preset("Wolf",8,4,2,4,2));
             ret.Add(new Preset("Worg",4,5,2,6,3));
+            ret.Add(new Preset("Cranium Rat", 8, 4, 1, 1, 0));
+            ret.Add(new Preset("Dimetrodon", 8, 4, 2, 6, 2));
+            ret.Add(new Preset("Brontosaurus(Stomp)", 0, 8, 5, 8, 5));
+            ret.Add(new Preset("Brontosaurus(Tail)", 0, 8, 6, 8, 5));
+            ret.Add(new Preset("Deinonychus(Bite)", 2, 4, 1, 8, 2));
+            ret.Add(new Preset("Deinonychus(Claw)", 2, 4, 1, 8, 2));
+            ret.Add(new Preset("Hadrosaurus",8,4,1,10,2));
+            ret.Add(new Preset("Steosaurus",0,7,6,6,5));
+            ret.Add(new Preset("Quetzaloatus",1,4,3,6,2));
+            ret.Add(new Preset("Velociraptor(Bite)",8,4,1,6,2));
+            ret.Add(new Preset("Velociraptor(Claw)", 8, 4, 1, 4, 2));
+            ret.Add(new Preset("Aurochs",1,7,2,8,5));
+            ret.Add(new Preset("Cow",8,6,1,6,4));
+            ret.Add(new Preset("Dolphin",8,4,1,6,2));
+
             return ret.ToArray();
            }
 

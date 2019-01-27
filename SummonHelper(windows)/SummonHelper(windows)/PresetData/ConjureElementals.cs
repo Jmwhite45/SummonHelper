@@ -67,6 +67,7 @@ namespace SummonHelper_windows_.PresetData
             ret.Add(new Preset("Fire Elemental Myrmidon", getCount(7, minor), 7, 1, 6, 4));
             ret.Add(new Preset("Water Elemental Myrmidon(1H)", getCount(7, minor), 7, 1, 6, 4));
             ret.Add(new Preset("Water Elemental Myrmidon(2H)", getCount(7, minor), 7, 1, 8, 4));
+            ret.Add(new Preset("Flail Snail", getCount(3,minor),5,1,6,3));
 
             return ret.ToArray();
         }

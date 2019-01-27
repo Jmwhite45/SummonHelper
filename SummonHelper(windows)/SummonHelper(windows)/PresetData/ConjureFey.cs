@@ -47,6 +47,20 @@ namespace SummonHelper_windows_.PresetData
             ret.Add(new Preset("Conclave Dryad(Longbow)", getCount(9, minor), 8, 1, 8, 4));
             ret.Add(new Preset("Trostani(contrict)", getCount(18, minor),11,3,6,5));
             ret.Add(new Preset("Trostani(Touch of order)", getCount(18, minor), 16, 3, 8, 10));
+            ret.Add(new Preset("Boggle", 8, 1, 1, 6, -1));
+            ret.Add(new Preset("Darkling", 4, 5, 1, 4, 3));
+            ret.Add(new Preset("Darkling Elder", 1, 5, 1, 6, 3));
+            ret.Add(new Preset("Annis Hag(bite)",getCount(6,minor),8,3,6,5));
+            ret.Add(new Preset("Annis Hag(claw)", getCount(6, minor), 8, 3, 6, 5));
+            ret.Add(new Preset("Bheur Hag",getCount(7,minor),4,2,8,1));
+            ret.Add(new Preset("Korred(great Club)", getCount(7, minor), 9, 1, 8, 6));
+            ret.Add(new Preset("Korred(Rock)", getCount(7, minor), 9, 2, 8, 6));
+            ret.Add(new Preset("Meenlock", getCount(2, minor), 4, 2, 4, 2));
+            ret.Add(new Preset("quickling", getCount(1, minor), 8, 1, 4, 6));
+            ret.Add(new Preset("Redcap", getCount(3, minor), 6, 2, 4, 4));
+            ret.Add(new Preset("Yeth", getCount(4, minor), 6, 2, 6, 4));
+
+
 
             return ret.ToArray();
         }

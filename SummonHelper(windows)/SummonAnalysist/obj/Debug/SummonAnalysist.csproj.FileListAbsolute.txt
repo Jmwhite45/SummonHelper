@@ -12,3 +12,17 @@ C:\Projects\Summon Helper(Windows)\SummonHelper(windows)\SummonAnalysist\obj\Deb
 C:\Projects\Summon Helper(Windows)\SummonHelper(windows)\SummonAnalysist\obj\Debug\SummonAnalysist.csproj.CopyComplete
 C:\Projects\Summon Helper(Windows)\SummonHelper(windows)\SummonAnalysist\obj\Debug\SummonAnalysist.exe
 C:\Projects\Summon Helper(Windows)\SummonHelper(windows)\SummonAnalysist\obj\Debug\SummonAnalysist.pdb
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\SummonAnalysist\bin\Debug\SummonAnalysist.exe.config
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\SummonAnalysist\bin\Debug\SummonAnalysist.exe
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\SummonAnalysist\bin\Debug\SummonAnalysist.pdb
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\SummonAnalysist\bin\Debug\SummonHelper(windows).exe
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\SummonAnalysist\bin\Debug\SummonHelper(windows).pdb
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\SummonAnalysist\bin\Debug\SummonHelper(windows).exe.config
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\SummonAnalysist\obj\Debug\SummonAnalysist.csprojAssemblyReference.cache
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\SummonAnalysist\obj\Debug\SummonAnalysist.Form1.resources
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\SummonAnalysist\obj\Debug\SummonAnalysist.Properties.Resources.resources
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\SummonAnalysist\obj\Debug\SummonAnalysist.csproj.GenerateResource.cache
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\SummonAnalysist\obj\Debug\SummonAnalysist.csproj.CoreCompileInputs.cache
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\SummonAnalysist\obj\Debug\SummonAnalysist.csproj.CopyComplete
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\SummonAnalysist\obj\Debug\SummonAnalysist.exe
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\SummonAnalysist\obj\Debug\SummonAnalysist.pdb

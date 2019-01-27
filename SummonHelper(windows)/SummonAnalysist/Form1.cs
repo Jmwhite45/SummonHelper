@@ -25,21 +25,13 @@ namespace SummonAnalysist
         {
             Summons.Items.Clear();
 
-            IPreset presetData = new ConjureAnimal();
-            if (Spells.SelectedItem.ToString() == "Conjure Animals")
-            {
-                presetData = new ConjureAnimal();
-            }
+            IPreset presetData = ActiveSpells.GetPreset(Spells.SelectedItem.ToString());
             Summons.Items.AddRange(presetData.getNames());
         }
 
         private void Summons_SelectedIndexChanged(object sender, EventArgs e)
         {
-            IPreset presetData = new ConjureAnimal();
-            if (Spells.SelectedItem.ToString() == "Conjure Animals")
-            {
-                presetData = new ConjureAnimal();
-            }
+            IPreset presetData = ActiveSpells.GetPreset(Spells.SelectedItem.ToString());
 
             Preset currAttack = presetData.getList().ToList().First(x => x.name.Equals(Summons.SelectedItem.ToString()));
 
@@ -76,11 +68,7 @@ namespace SummonAnalysist
 
         private void MassAnalysis_Click(object sender, EventArgs e)
         {
-            IPreset presetData = new ConjureAnimal();
-            if (Spells.SelectedItem.ToString() == "Conjure Animals")
-            {
-                presetData = new ConjureAnimal();
-            }
+            IPreset presetData = ActiveSpells.GetPreset(Spells.SelectedItem.ToString());
 
             List<Preset> currAttacks = presetData.getList().ToList();
 
