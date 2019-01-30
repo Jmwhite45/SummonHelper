@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SummonHelper(windows).exe" size="32736">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SummonHelper(windows).exe" size="33248">
       <assemblyIdentity name="SummonHelper(windows)" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>GK5CPCoUKfs0HGtaBXWDi1zAnETiVfI21uyRvyUBmSo=</dsig:DigestValue>
+        <dsig:DigestValue>hO6/wxH3hWhlFoF4Ei2y6hqxL5hGyZMfPQkv0b8k3L8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

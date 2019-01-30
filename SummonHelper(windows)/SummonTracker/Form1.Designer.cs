@@ -28,67 +28,75 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.button1 = new System.Windows.Forms.Button();
+            this.SummonedCreatures = new System.Windows.Forms.ListBox();
+            this.Spells = new System.Windows.Forms.ComboBox();
+            this.Creatures = new System.Windows.Forms.ComboBox();
+            this.SummonCount = new System.Windows.Forms.NumericUpDown();
+            this.btnAdd = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.AtkOuput = new System.Windows.Forms.TextBox();
             this.HP = new System.Windows.Forms.Label();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.button2 = new System.Windows.Forms.Button();
+            this.numHP = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
-            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
-            this.button3 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
+            this.numAC = new System.Windows.Forms.NumericUpDown();
+            this.btnOpen = new System.Windows.Forms.Button();
+            this.btnAtk = new System.Windows.Forms.Button();
+            this.rbtnAdv = new System.Windows.Forms.RadioButton();
+            this.rbtnNorm = new System.Windows.Forms.RadioButton();
+            this.rbtnDis = new System.Windows.Forms.RadioButton();
+            this.btnChangeType = new System.Windows.Forms.Button();
+            this.ChangeType = new System.Windows.Forms.ComboBox();
+            ((System.ComponentModel.ISupportInitialize)(this.SummonCount)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numHP)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numAC)).BeginInit();
             this.SuspendLayout();
             // 
-            // listBox1
+            // SummonedCreatures
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(13, 141);
-            this.listBox1.MultiColumn = true;
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(194, 292);
-            this.listBox1.TabIndex = 0;
+            this.SummonedCreatures.FormattingEnabled = true;
+            this.SummonedCreatures.ItemHeight = 16;
+            this.SummonedCreatures.Location = new System.Drawing.Point(13, 157);
+            this.SummonedCreatures.MultiColumn = true;
+            this.SummonedCreatures.Name = "SummonedCreatures";
+            this.SummonedCreatures.Size = new System.Drawing.Size(194, 276);
+            this.SummonedCreatures.TabIndex = 0;
+            this.SummonedCreatures.SelectedIndexChanged += new System.EventHandler(this.SummonedCreatures_SelectedIndexChanged);
             // 
-            // comboBox1
+            // Spells
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(13, 33);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(194, 24);
-            this.comboBox1.TabIndex = 1;
+            this.Spells.FormattingEnabled = true;
+            this.Spells.Location = new System.Drawing.Point(13, 33);
+            this.Spells.Name = "Spells";
+            this.Spells.Size = new System.Drawing.Size(194, 24);
+            this.Spells.TabIndex = 1;
+            this.Spells.SelectedIndexChanged += new System.EventHandler(this.Spells_SelectedIndexChanged);
             // 
-            // comboBox2
+            // Creatures
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(13, 83);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(194, 24);
-            this.comboBox2.TabIndex = 2;
+            this.Creatures.FormattingEnabled = true;
+            this.Creatures.Location = new System.Drawing.Point(13, 83);
+            this.Creatures.Name = "Creatures";
+            this.Creatures.Size = new System.Drawing.Size(194, 24);
+            this.Creatures.TabIndex = 2;
+            this.Creatures.SelectedIndexChanged += new System.EventHandler(this.Creatures_SelectedIndexChanged);
             // 
-            // numericUpDown1
+            // SummonCount
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(13, 114);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(85, 22);
-            this.numericUpDown1.TabIndex = 3;
+            this.SummonCount.Location = new System.Drawing.Point(13, 121);
+            this.SummonCount.Name = "SummonCount";
+            this.SummonCount.Size = new System.Drawing.Size(85, 22);
+            this.SummonCount.TabIndex = 3;
             // 
-            // button1
+            // btnAdd
             // 
-            this.button1.Location = new System.Drawing.Point(105, 112);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(102, 24);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Add";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAdd.Location = new System.Drawing.Point(105, 112);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(102, 39);
+            this.btnAdd.TabIndex = 4;
+            this.btnAdd.Text = "Add";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // label1
             // 
@@ -108,14 +116,14 @@
             this.label2.TabIndex = 6;
             this.label2.Text = "Creature";
             // 
-            // textBox1
+            // AtkOuput
             // 
-            this.textBox1.Location = new System.Drawing.Point(214, 141);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(574, 292);
-            this.textBox1.TabIndex = 7;
+            this.AtkOuput.Location = new System.Drawing.Point(214, 157);
+            this.AtkOuput.Multiline = true;
+            this.AtkOuput.Name = "AtkOuput";
+            this.AtkOuput.ReadOnly = true;
+            this.AtkOuput.Size = new System.Drawing.Size(574, 276);
+            this.AtkOuput.TabIndex = 7;
             // 
             // HP
             // 
@@ -126,21 +134,13 @@
             this.HP.TabIndex = 8;
             this.HP.Text = "HP:";
             // 
-            // numericUpDown2
+            // numHP
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(240, 7);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(87, 22);
-            this.numericUpDown2.TabIndex = 9;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(214, 60);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(125, 35);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "Update HP";
-            this.button2.UseVisualStyleBackColor = true;
+            this.numHP.Location = new System.Drawing.Point(240, 7);
+            this.numHP.Name = "numHP";
+            this.numHP.Size = new System.Drawing.Size(87, 22);
+            this.numHP.TabIndex = 9;
+            this.numHP.ValueChanged += new System.EventHandler(this.numHP_ValueChanged);
             // 
             // label3
             // 
@@ -150,59 +150,120 @@
             this.label3.Size = new System.Drawing.Size(30, 17);
             this.label3.TabIndex = 11;
             this.label3.Text = "AC:";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // numericUpDown3
+            // numAC
             // 
-            this.numericUpDown3.Location = new System.Drawing.Point(240, 35);
-            this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(87, 22);
-            this.numericUpDown3.TabIndex = 12;
+            this.numAC.Location = new System.Drawing.Point(240, 35);
+            this.numAC.Name = "numAC";
+            this.numAC.Size = new System.Drawing.Size(87, 22);
+            this.numAC.TabIndex = 12;
+            this.numAC.ValueChanged += new System.EventHandler(this.numAC_ValueChanged);
             // 
-            // button3
+            // btnOpen
             // 
-            this.button3.Location = new System.Drawing.Point(213, 101);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(126, 34);
-            this.button3.TabIndex = 13;
-            this.button3.Text = "Open creature\r\n";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btnOpen.Location = new System.Drawing.Point(214, 64);
+            this.btnOpen.Name = "btnOpen";
+            this.btnOpen.Size = new System.Drawing.Size(113, 43);
+            this.btnOpen.TabIndex = 13;
+            this.btnOpen.Text = "Open creature\r\n";
+            this.btnOpen.UseVisualStyleBackColor = true;
             // 
-            // textBox2
+            // btnAtk
             // 
-            this.textBox2.Location = new System.Drawing.Point(345, 12);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(443, 123);
-            this.textBox2.TabIndex = 14;
+            this.btnAtk.Location = new System.Drawing.Point(215, 112);
+            this.btnAtk.Name = "btnAtk";
+            this.btnAtk.Size = new System.Drawing.Size(113, 39);
+            this.btnAtk.TabIndex = 15;
+            this.btnAtk.Text = "Attack";
+            this.btnAtk.UseVisualStyleBackColor = true;
+            this.btnAtk.Click += new System.EventHandler(this.btnAtk_Click);
+            // 
+            // rbtnAdv
+            // 
+            this.rbtnAdv.AutoSize = true;
+            this.rbtnAdv.Location = new System.Drawing.Point(333, 5);
+            this.rbtnAdv.Name = "rbtnAdv";
+            this.rbtnAdv.Size = new System.Drawing.Size(97, 21);
+            this.rbtnAdv.TabIndex = 16;
+            this.rbtnAdv.Text = "Advantage";
+            this.rbtnAdv.UseVisualStyleBackColor = true;
+            this.rbtnAdv.CheckedChanged += new System.EventHandler(this.rbtnAdv_CheckedChanged);
+            // 
+            // rbtnNorm
+            // 
+            this.rbtnNorm.AutoSize = true;
+            this.rbtnNorm.Checked = true;
+            this.rbtnNorm.Location = new System.Drawing.Point(333, 32);
+            this.rbtnNorm.Name = "rbtnNorm";
+            this.rbtnNorm.Size = new System.Drawing.Size(74, 21);
+            this.rbtnNorm.TabIndex = 17;
+            this.rbtnNorm.TabStop = true;
+            this.rbtnNorm.Text = "Normal";
+            this.rbtnNorm.UseVisualStyleBackColor = true;
+            this.rbtnNorm.CheckedChanged += new System.EventHandler(this.rbtnNorm_CheckedChanged);
+            // 
+            // rbtnDis
+            // 
+            this.rbtnDis.AutoSize = true;
+            this.rbtnDis.Location = new System.Drawing.Point(333, 59);
+            this.rbtnDis.Name = "rbtnDis";
+            this.rbtnDis.Size = new System.Drawing.Size(116, 21);
+            this.rbtnDis.TabIndex = 18;
+            this.rbtnDis.Text = "Disadvantage";
+            this.rbtnDis.UseVisualStyleBackColor = true;
+            this.rbtnDis.CheckedChanged += new System.EventHandler(this.rbtnDis_CheckedChanged);
+            // 
+            // btnChangeType
+            // 
+            this.btnChangeType.Location = new System.Drawing.Point(334, 112);
+            this.btnChangeType.Name = "btnChangeType";
+            this.btnChangeType.Size = new System.Drawing.Size(120, 39);
+            this.btnChangeType.TabIndex = 19;
+            this.btnChangeType.Text = "Change All";
+            this.btnChangeType.UseVisualStyleBackColor = true;
+            this.btnChangeType.Click += new System.EventHandler(this.btnChangeType_Click);
+            // 
+            // ChangeType
+            // 
+            this.ChangeType.FormattingEnabled = true;
+            this.ChangeType.Items.AddRange(new object[] {
+            "Advantage",
+            "Normal",
+            "Disadvantage"});
+            this.ChangeType.Location = new System.Drawing.Point(333, 83);
+            this.ChangeType.Name = "ChangeType";
+            this.ChangeType.Size = new System.Drawing.Size(121, 24);
+            this.ChangeType.TabIndex = 20;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.numericUpDown3);
+            this.Controls.Add(this.ChangeType);
+            this.Controls.Add(this.btnChangeType);
+            this.Controls.Add(this.rbtnDis);
+            this.Controls.Add(this.rbtnNorm);
+            this.Controls.Add(this.rbtnAdv);
+            this.Controls.Add(this.btnAtk);
+            this.Controls.Add(this.btnOpen);
+            this.Controls.Add(this.numAC);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.numericUpDown2);
+            this.Controls.Add(this.numHP);
             this.Controls.Add(this.HP);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.AtkOuput);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.numericUpDown1);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.btnAdd);
+            this.Controls.Add(this.SummonCount);
+            this.Controls.Add(this.Creatures);
+            this.Controls.Add(this.Spells);
+            this.Controls.Add(this.SummonedCreatures);
             this.Name = "Form1";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SummonCount)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numHP)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numAC)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -210,21 +271,25 @@
 
         #endregion
 
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ListBox SummonedCreatures;
+        private System.Windows.Forms.ComboBox Spells;
+        private System.Windows.Forms.ComboBox Creatures;
+        private System.Windows.Forms.NumericUpDown SummonCount;
+        private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox AtkOuput;
         private System.Windows.Forms.Label HP;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.NumericUpDown numHP;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.NumericUpDown numericUpDown3;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.NumericUpDown numAC;
+        private System.Windows.Forms.Button btnOpen;
+        private System.Windows.Forms.Button btnAtk;
+        private System.Windows.Forms.RadioButton rbtnAdv;
+        private System.Windows.Forms.RadioButton rbtnNorm;
+        private System.Windows.Forms.RadioButton rbtnDis;
+        private System.Windows.Forms.Button btnChangeType;
+        private System.Windows.Forms.ComboBox ChangeType;
     }
 }
 

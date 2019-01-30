@@ -1,0 +1,14 @@
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\SummonTracker\bin\Debug\SummonTracker.exe.config
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\SummonTracker\bin\Debug\SummonTracker.exe
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\SummonTracker\bin\Debug\SummonTracker.pdb
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\SummonTracker\bin\Debug\SummonHelper(windows).exe
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\SummonTracker\bin\Debug\SummonHelper(windows).pdb
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\SummonTracker\bin\Debug\SummonHelper(windows).exe.config
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\SummonTracker\obj\Debug\SummonTracker.csprojAssemblyReference.cache
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\SummonTracker\obj\Debug\SummonTracker.Form1.resources
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\SummonTracker\obj\Debug\SummonTracker.Properties.Resources.resources
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\SummonTracker\obj\Debug\SummonTracker.csproj.GenerateResource.cache
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\SummonTracker\obj\Debug\SummonTracker.csproj.CoreCompileInputs.cache
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\SummonTracker\obj\Debug\SummonTracker.csproj.CopyComplete
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\SummonTracker\obj\Debug\SummonTracker.exe
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\SummonTracker\obj\Debug\SummonTracker.pdb

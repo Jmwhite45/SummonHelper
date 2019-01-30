@@ -8,7 +8,7 @@ namespace SummonHelper_windows_
 {
     public class Atk
     {
-        int id;
+        public string id;
 
         int atkRoll;
         int otherAtkRoll;
@@ -25,6 +25,16 @@ namespace SummonHelper_windows_
 
         public Atk(int ID, int AtkMod, int NumDice, int Dice, int DamMod)
         {
+            id = ID.ToString();
+            atkMod = AtkMod;
+            numDice = NumDice;
+            dice = Dice;
+            damMod = DamMod;
+            type = RollTypes.normal;
+        }
+
+        public Atk(string ID, int AtkMod, int NumDice, int Dice, int DamMod)
+        {
             id = ID;
             atkMod = AtkMod;
             numDice = NumDice;
@@ -38,6 +48,10 @@ namespace SummonHelper_windows_
             type = t;
         }
 
+        public RollTypes getRollType()
+        {
+            return type;
+        }
         public void rollAtk(Random rnd)
         {
             atkRoll = rnd.Next(1, 21);
@@ -78,7 +92,7 @@ namespace SummonHelper_windows_
 
         public override string ToString()
         {
-            string ret = id+". \t";
+            string ret = id+" \t";
             int roll = atkTotal-atkMod;
 
             if (roll == 20)

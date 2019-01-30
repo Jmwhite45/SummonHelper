@@ -11,20 +11,22 @@ namespace SummonHelper_windows_.PresetData
     {
         public string name;
         public int count;
+        public Atk atk;
         public int atkMod;
         public int numDice;
         public int diceType;
         public int damMod;
         public Special special;
 
+        public int AC;
+        public int HP;
+
         public Preset(string Name, int Count, int AtkMod, int NumDice, int DiceType, int DamMod)
         {
             name = Name;
             count = Count;
-            atkMod = AtkMod;
-            numDice = NumDice;
-            diceType = DiceType;
-            damMod = DamMod;
+
+            atk = new Atk(Name, AtkMod, NumDice, DiceType, DamMod);
             special = new Special("","",new Atk(0,0,0,0,0));
         }
         public Preset(string Name, int Count, int AtkMod, int NumDice, int DiceType, int DamMod, Special Special)
