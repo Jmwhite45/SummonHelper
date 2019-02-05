@@ -1,13 +1,10 @@
-﻿using SummonHelper_windows_.Core;
-using SummonHelper_windows_.PresetData;
+﻿using SummonCore.Enums;
+using SummonCore.Interface;
+using SummonCore.Model;
+using SummonCore.PresetData;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace SummonHelper_windows_
@@ -98,10 +95,10 @@ namespace SummonHelper_windows_
             Preset currAttack = presetData.getList().ToList().First(x => x.name.Equals(PresetCreatures.SelectedItem.ToString()));
 
             numOf.Value = currAttack.count;
-            atkRollMod.Value = currAttack.atkMod;
-            damDiceMod.Value = currAttack.numDice;
-            diceType.Value = currAttack.diceType;
-            damMod.Value = currAttack.damMod;
+            atkRollMod.Value = currAttack.atk.atkMod;
+            damDiceMod.Value = currAttack.atk.numDice;
+            diceType.Value = currAttack.atk.dice;
+            damMod.Value = currAttack.atk.damMod;
         }
 
         private void Form1_Load(object sender, EventArgs e)

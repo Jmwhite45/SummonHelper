@@ -24,9 +24,8 @@ C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\Randomization
 C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\RandomizationTest\bin\Debug\RandomizationTest.application
 C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\RandomizationTest\bin\Debug\RandomizationTest.exe
 C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\RandomizationTest\bin\Debug\RandomizationTest.pdb
-C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\RandomizationTest\bin\Debug\SummonHelper(windows).exe
-C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\RandomizationTest\bin\Debug\SummonHelper(windows).pdb
-C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\RandomizationTest\bin\Debug\SummonHelper(windows).exe.config
 C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\RandomizationTest\obj\Debug\RandomizationTest.exe.manifest
 C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\RandomizationTest\obj\Debug\RandomizationTest.application
 C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\RandomizationTest\obj\Debug\RandomizationTest.csproj.CopyComplete
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\RandomizationTest\bin\Debug\SummonCore.dll
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\RandomizationTest\bin\Debug\SummonCore.pdb

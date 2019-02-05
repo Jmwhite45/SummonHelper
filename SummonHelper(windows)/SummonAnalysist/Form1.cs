@@ -1,15 +1,10 @@
-﻿using SummonHelper_windows_.PresetData;
+﻿using SummonCore.Interface;
+using SummonCore.Model;
+using SummonCore.PresetData;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using SummonHelper_windows_;
-using SummonHelper_windows_.Core;
 
 namespace SummonAnalysist
 {
@@ -41,8 +36,8 @@ namespace SummonAnalysist
         private void Analysize(Preset currAttack)
         {
             string output = currAttack.name + Environment.NewLine;
-            output += "To Hit: +" + currAttack.atkMod+ Environment.NewLine;
-            output += "Damage: " + currAttack.numDice + "d" + currAttack.diceType + "+" + currAttack.damMod + Environment.NewLine;
+            output += "To Hit: +" + currAttack.atk.atkMod+ Environment.NewLine;
+            output += "Damage: " + currAttack.atk.numDice + "d" + currAttack.atk.dice + "+" + currAttack.atk.damMod + Environment.NewLine;
             output += Environment.NewLine + "Other Analysis" + Environment.NewLine + "-------------" + Environment.NewLine;
             output += "Average Damage: " + AverageDam(currAttack)+Environment.NewLine;
             output += "Min Damage: " + MinDam(currAttack) + Environment.NewLine;
@@ -53,17 +48,17 @@ namespace SummonAnalysist
 
         private int MaxDam(Preset currAttack)
         {
-            return (currAttack.numDice * currAttack.diceType) + currAttack.damMod;
+            return (currAttack.atk.numDice * currAttack.atk.dice) + currAttack.atk.damMod;
         }
 
         private int MinDam(Preset currAttack)
         {
-            return (currAttack.numDice * 1) + currAttack.damMod;
+            return (currAttack.atk.numDice * 1) + currAttack.atk.damMod;
         }
 
         private double AverageDam(Preset currAttack)
         {
-            return (double)(currAttack.numDice * ((currAttack.diceType + 1) / 2)) + currAttack.damMod;
+            return (double)(currAttack.atk.numDice * ((currAttack.atk.dice + 1) / 2)) + currAttack.atk.damMod;
         }
 
         private void MassAnalysis_Click(object sender, EventArgs e)
@@ -129,8 +124,8 @@ namespace SummonAnalysist
 
             foreach (Preset atk in currAttacks)
             {
-                double a = (MaxDam(MaxDamage) * MaxDamage.count) * ACMod(AC, MaxDamage.atkMod);
-                double c = ACMod(AC, atk.atkMod);
+                double a = (MaxDam(MaxDamage) * MaxDamage.count) * ACMod(AC, MaxDamage.atk.atkMod);
+                double c = ACMod(AC, atk.atk.atkMod);
                 double b = (MaxDam(atk) * atk.count) * c;
 
 
@@ -138,19 +133,19 @@ namespace SummonAnalysist
                 {
                     MaxDamage = atk;
                 }
-                if ((MinDam(MinDamage) * MinDamage.count) * ACMod(AC, MinDamage.atkMod) < (MinDam(atk) * atk.count) * ACMod(AC, atk.atkMod))
+                if ((MinDam(MinDamage) * MinDamage.count) * ACMod(AC, MinDamage.atk.atkMod) < (MinDam(atk) * atk.count) * ACMod(AC, atk.atk.atkMod))
                 {
                     MinDamage = atk;
                 }
-                if ((AverageDam(avergeDamage) * avergeDamage.count) *ACMod(AC, avergeDamage.atkMod) < (AverageDam(atk) * atk.count) * ACMod(AC, atk.atkMod))
+                if ((AverageDam(avergeDamage) * avergeDamage.count) *ACMod(AC, avergeDamage.atk.atkMod) < (AverageDam(atk) * atk.count) * ACMod(AC, atk.atk.atkMod))
                 {
                     avergeDamage = atk;
                 }
             }
 
-            output += "Max Damage: " + MaxDamage.name + "(" + MaxDamage.count + ") with " + (MaxDam(MaxDamage) * MaxDamage.count) * ACMod(AC, MaxDamage.atkMod) + Environment.NewLine;
-            output += "Min Damage: " + MinDamage.name + "(" + MinDamage.count + ") with " + (MinDam(MinDamage) * MinDamage.count) * ACMod(AC, MinDamage.atkMod) + Environment.NewLine;
-            output += "Aver Damage: " + avergeDamage.name + "(" + avergeDamage.count + ") with " + (AverageDam(avergeDamage) * avergeDamage.count)*ACMod(AC, avergeDamage.atkMod) + Environment.NewLine;
+            output += "Max Damage: " + MaxDamage.name + "(" + MaxDamage.count + ") with " + (MaxDam(MaxDamage) * MaxDamage.count) * ACMod(AC, MaxDamage.atk.atkMod) + Environment.NewLine;
+            output += "Min Damage: " + MinDamage.name + "(" + MinDamage.count + ") with " + (MinDam(MinDamage) * MinDamage.count) * ACMod(AC, MinDamage.atk.atkMod) + Environment.NewLine;
+            output += "Aver Damage: " + avergeDamage.name + "(" + avergeDamage.count + ") with " + (AverageDam(avergeDamage) * avergeDamage.count)*ACMod(AC, avergeDamage.atk.atkMod) + Environment.NewLine;
 
             return output;
         }

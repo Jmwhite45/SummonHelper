@@ -1,15 +1,12 @@
-﻿using System;
+﻿using SummonCore.Enums;
+using SummonCore.Interface;
+using SummonCore.Model;
+using SummonCore.PresetData;
+using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using SummonHelper_windows_;
-using SummonHelper_windows_.Core;
-using SummonHelper_windows_.PresetData;
 
 namespace SummonTracker
 {
@@ -22,8 +19,27 @@ namespace SummonTracker
             summonedCreatures.Add(p);
             SummonedCreatures.Items.Add(p);
         }
+        private void RemoveSummon(Preset p)
+        {
+            summonedCreatures.Remove(p);
+            int newindex = SummonedCreatures.SelectedIndex - 1;
+            if(newindex < 0)
+            {
+                newindex = 0;
+            }
+
+            SummonedCreatures.Items.Remove(p);
+            if (SummonedCreatures.Items.Count > 0)
+            {
+                SummonedCreatures.SelectedIndex = newindex;
+            }
+        }
         private Preset getSummon(int index)
         {
+            if(summonedCreatures.Count == 0)
+            {
+                return null;
+            }
             if(index == -1)
             {
                 return summonedCreatures.ElementAt(0);
@@ -73,12 +89,31 @@ namespace SummonTracker
 
         private void SummonedCreatures_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if(summonedCreatures.Count == 0 )
+            {
+                return;
+            }
             Preset currCreature = getSummon();
 
             numAC.Value = currCreature.AC;
-            numHP.Value = currCreature.HP;
+            numHP.Value = currCreature.Health.currentHP;
 
             RollTypes type = currCreature.atk.getRollType();
+            rbtnAdv.Checked = false;
+            rbtnNorm.Checked = false;
+            rbtnDis.Checked = false;
+            if(type == RollTypes.advantage)
+            {
+                rbtnAdv.Checked = true;
+            }
+            if (type == RollTypes.normal)
+            {
+                rbtnNorm.Checked = true;
+            }
+            if (type == RollTypes.disadvantage)
+            {
+                rbtnDis.Checked = true;
+            }
         }
 
         private void btnAtk_Click(object sender, EventArgs e)
@@ -125,7 +160,12 @@ namespace SummonTracker
             {
                 return;
             }
-            getSummon().HP = (int)numHP.Value;
+            getSummon().Health.currentHP = (int)numHP.Value;
+
+            if(getSummon().Health.currentHP < 0)
+            {
+                RemoveSummon(getSummon());
+            }
         }
 
         private void numAC_ValueChanged(object sender, EventArgs e)
@@ -168,6 +208,10 @@ namespace SummonTracker
 
         private void btnChangeType_Click(object sender, EventArgs e)
         {
+            if(ChangeType.SelectedItem == null)
+            {
+                return;
+            }
             string value = ChangeType.SelectedItem.ToString();
             RollTypes changeValue = RollTypes.normal;
             if(value == "Advantage")
@@ -182,6 +226,22 @@ namespace SummonTracker
             {
                 p.atk.changeRollType(changeValue);
             }
+        }
+
+        private void btnOpen_Click(object sender, EventArgs e)
+        {
+            if (summonedCreatures.Count == 0)
+            {
+                return;
+            }
+            Preset creature = getSummon();
+
+            CreatureModel Model = new CreatureModel();
+
+            Model.AC = creature.AC;
+            Model.atk = creature.atk;
+            Model.Health = null;
+            Model.Name = creature.name;
         }
     }
 }

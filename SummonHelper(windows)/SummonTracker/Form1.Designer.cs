@@ -122,6 +122,7 @@
             this.AtkOuput.Multiline = true;
             this.AtkOuput.Name = "AtkOuput";
             this.AtkOuput.ReadOnly = true;
+            this.AtkOuput.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.AtkOuput.Size = new System.Drawing.Size(574, 276);
             this.AtkOuput.TabIndex = 7;
             // 
@@ -137,6 +138,16 @@
             // numHP
             // 
             this.numHP.Location = new System.Drawing.Point(240, 7);
+            this.numHP.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.numHP.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            -2147483648});
             this.numHP.Name = "numHP";
             this.numHP.Size = new System.Drawing.Size(87, 22);
             this.numHP.TabIndex = 9;
@@ -154,6 +165,11 @@
             // numAC
             // 
             this.numAC.Location = new System.Drawing.Point(240, 35);
+            this.numAC.Minimum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            -2147483648});
             this.numAC.Name = "numAC";
             this.numAC.Size = new System.Drawing.Size(87, 22);
             this.numAC.TabIndex = 12;
@@ -167,6 +183,7 @@
             this.btnOpen.TabIndex = 13;
             this.btnOpen.Text = "Open creature\r\n";
             this.btnOpen.UseVisualStyleBackColor = true;
+            this.btnOpen.Click += new System.EventHandler(this.btnOpen_Click);
             // 
             // btnAtk
             // 

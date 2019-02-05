@@ -22,3 +22,6 @@ C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\SummonHelper(
 C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\SummonHelper(windows)\obj\Debug\SummonHelper(windows).application
 C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\SummonHelper(windows)\obj\Debug\SummonHelper(windows).exe
 C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\SummonHelper(windows)\obj\Debug\SummonHelper(windows).pdb
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\SummonHelper(windows)\bin\Debug\SummonCore.dll
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\SummonHelper(windows)\bin\Debug\SummonCore.pdb
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\SummonHelper(windows)\obj\Debug\SummonHelper(windows).csproj.CopyComplete

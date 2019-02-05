@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CreatureForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreatureForm.Designer.cs">
+      <DependentUpon>CreatureForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +60,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CreatureForm.resx">
+      <DependentUpon>CreatureForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -80,9 +89,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SummonHelper%28windows%29\SummonHelper%28windows%29.csproj">
-      <Project>{d88ad865-f115-40e0-ac45-0b5d31409569}</Project>
-      <Name>SummonHelper%28windows%29</Name>
+    <ProjectReference Include="..\SummonCore\SummonCore.csproj">
+      <Project>{3a4ba93a-06e4-4bd6-83bb-2aab9c02fad8}</Project>
+      <Name>SummonCore</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

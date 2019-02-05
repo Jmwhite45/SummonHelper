@@ -42,14 +42,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SummonHelper(windows).exe" size="33248">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SummonCore.dll" size="23040">
+      <assemblyIdentity name="SummonCore" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>RxxGm9vS4r1ExsKUYe/tQa9NCVtUbdshk+k+LzcDwXI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SummonHelper(windows).exe" size="16352">
       <assemblyIdentity name="SummonHelper(windows)" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>hO6/wxH3hWhlFoF4Ei2y6hqxL5hGyZMfPQkv0b8k3L8=</dsig:DigestValue>
+        <dsig:DigestValue>vLgbxIN3Mw+NspCLTXjrDidPCgxkgBxkdgylS5NHToI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

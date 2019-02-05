@@ -1,0 +1,6 @@
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\SummonCore\obj\Debug\SummonCore.csprojAssemblyReference.cache
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\SummonCore\obj\Debug\SummonCore.csproj.CoreCompileInputs.cache
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\SummonCore\bin\Debug\SummonCore.dll
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\SummonCore\bin\Debug\SummonCore.pdb
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\SummonCore\obj\Debug\SummonCore.dll
+C:\Users\legoj\Documents\GitHub\SummonHelper\SummonHelper(windows)\SummonCore\obj\Debug\SummonCore.pdb
