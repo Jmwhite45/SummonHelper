@@ -40,8 +40,8 @@
             this.DamMod = new System.Windows.Forms.NumericUpDown();
             this.label6 = new System.Windows.Forms.Label();
             this.numAC = new System.Windows.Forms.NumericUpDown();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnUpdThis = new System.Windows.Forms.Button();
+            this.btnUpdAll = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.numHPDice = new System.Windows.Forms.NumericUpDown();
@@ -49,6 +49,7 @@
             this.HPMod = new System.Windows.Forms.NumericUpDown();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.newHP = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.atkMod)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumDamDice)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DamDiceType)).BeginInit();
@@ -156,23 +157,25 @@
             this.numAC.Size = new System.Drawing.Size(79, 22);
             this.numAC.TabIndex = 14;
             // 
-            // button1
+            // btnUpdThis
             // 
-            this.button1.Location = new System.Drawing.Point(12, 304);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(105, 43);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "Update This";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnUpdThis.Location = new System.Drawing.Point(12, 304);
+            this.btnUpdThis.Name = "btnUpdThis";
+            this.btnUpdThis.Size = new System.Drawing.Size(105, 43);
+            this.btnUpdThis.TabIndex = 15;
+            this.btnUpdThis.Text = "Update This";
+            this.btnUpdThis.UseVisualStyleBackColor = true;
+            this.btnUpdThis.Click += new System.EventHandler(this.btnUpdThis_Click);
             // 
-            // button2
+            // btnUpdAll
             // 
-            this.button2.Location = new System.Drawing.Point(133, 304);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(105, 43);
-            this.button2.TabIndex = 16;
-            this.button2.Text = "Update All";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnUpdAll.Location = new System.Drawing.Point(133, 304);
+            this.btnUpdAll.Name = "btnUpdAll";
+            this.btnUpdAll.Size = new System.Drawing.Size(105, 43);
+            this.btnUpdAll.TabIndex = 16;
+            this.btnUpdAll.Text = "Update All";
+            this.btnUpdAll.UseVisualStyleBackColor = true;
+            this.btnUpdAll.Click += new System.EventHandler(this.btnUpdAll_Click);
             // 
             // label7
             // 
@@ -231,11 +234,22 @@
             this.label10.TabIndex = 23;
             this.label10.Text = "DAMAGE";
             // 
+            // newHP
+            // 
+            this.newHP.AutoSize = true;
+            this.newHP.Location = new System.Drawing.Point(252, 256);
+            this.newHP.Name = "newHP";
+            this.newHP.Size = new System.Drawing.Size(106, 21);
+            this.newHP.TabIndex = 24;
+            this.newHP.Text = "Roll new HP";
+            this.newHP.UseVisualStyleBackColor = true;
+            // 
             // CreatureForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(360, 375);
+            this.Controls.Add(this.newHP);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.HPMod);
@@ -243,8 +257,8 @@
             this.Controls.Add(this.numHPDice);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnUpdAll);
+            this.Controls.Add(this.btnUpdThis);
             this.Controls.Add(this.numAC);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.DamMod);
@@ -287,8 +301,8 @@
         private System.Windows.Forms.NumericUpDown DamMod;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.NumericUpDown numAC;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnUpdThis;
+        private System.Windows.Forms.Button btnUpdAll;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.NumericUpDown numHPDice;
@@ -296,5 +310,6 @@
         private System.Windows.Forms.NumericUpDown HPMod;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.CheckBox newHP;
     }
 }

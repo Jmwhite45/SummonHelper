@@ -14,7 +14,7 @@ namespace SummonCore.Model
 
         public int currentHP { get; set; }
 
-        public int RollHP()
+        public void RollHP()
         {
             Random rnd = new Random();
             int ret = HPMod;
@@ -24,7 +24,24 @@ namespace SummonCore.Model
                 ret += rnd.Next(1, DiceType + 1);
             }
 
-            return ret;
+            currentHP = ret;
+        }
+
+        public HP(int num,int dice, int mod)
+        {
+            NumDice = num;
+            DiceType = dice;
+            HPMod = mod;
+
+            RollHP();
+        }
+        public HP()
+        {
+            NumDice = 0;
+            DiceType = 0;
+            HPMod = 0;
+
+            currentHP = 0;
         }
     }
 

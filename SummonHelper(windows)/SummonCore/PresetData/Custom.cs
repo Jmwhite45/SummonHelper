@@ -37,9 +37,5 @@ namespace SummonCore.PresetData
             return "Custom";
         }
 
-        Preset[] IPreset.getList()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

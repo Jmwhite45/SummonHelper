@@ -23,12 +23,18 @@ namespace SummonCore.Model
 
             atk = new Atk(Name, AtkMod, NumDice, DiceType, DamMod);
             special = new Special("","",new Atk(0,0,0,0,0));
+
+            Health = new HP();
         }
         public Preset(string Name, int Count, int AtkMod, int NumDice, int DiceType, int DamMod, Special Special)
         {
             name = Name;
             count = Count;
+
             atk = new Atk(Name, AtkMod, NumDice, DiceType, DamMod);
+            special = new Special("", "", new Atk(0, 0, 0, 0, 0));
+
+            Health = new HP();
             special = Special;
         }
 

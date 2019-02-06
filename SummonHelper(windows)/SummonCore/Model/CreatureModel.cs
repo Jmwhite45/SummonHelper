@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace SummonCore.Model
 {
@@ -13,5 +14,13 @@ namespace SummonCore.Model
         public int AC { get; set; }
         public HP Health { get; set; }
 
+        public CreatureModel()
+        {
+            Name = "";
+            AC = 10;
+            atk = new Atk(0, 0, 0, 0, 0);
+            Health = new HP();
+        }
     }
+    
 }

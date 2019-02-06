@@ -171,6 +171,7 @@
             0,
             -2147483648});
             this.numAC.Name = "numAC";
+            this.numAC.ReadOnly = true;
             this.numAC.Size = new System.Drawing.Size(87, 22);
             this.numAC.TabIndex = 12;
             this.numAC.ValueChanged += new System.EventHandler(this.numAC_ValueChanged);

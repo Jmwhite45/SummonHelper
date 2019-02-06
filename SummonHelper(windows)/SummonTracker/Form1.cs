@@ -240,8 +240,66 @@ namespace SummonTracker
 
             Model.AC = creature.AC;
             Model.atk = creature.atk;
-            Model.Health = null;
+            Model.Health = creature.Health;
             Model.Name = creature.name;
+
+            CreatureForm creatureForm = new CreatureForm(Model, this);
+            creatureForm.Show();
+        }
+
+        public void ReceiveData(CreatureForm form, bool All)
+        {
+           CreatureModel newData = form.getData();
+            bool newHP = form.NewHP();
+            form.Close();
+
+            if(All == false)
+            {
+                summonedCreatures.ElementAt(SummonedCreatures.SelectedIndex).AC = newData.AC;
+                summonedCreatures.ElementAt(SummonedCreatures.SelectedIndex).atk = newData.atk;
+                summonedCreatures.ElementAt(SummonedCreatures.SelectedIndex).Health = newData.Health;
+                summonedCreatures.ElementAt(SummonedCreatures.SelectedIndex).name = newData.Name;
+
+                Preset creature = new Preset("",getSummon().count,0,0,0,0);
+                creature.AC = newData.AC;
+                creature.atk = newData.atk;
+
+                if (newHP == true)
+                {
+                    newData.Health.RollHP();
+                }
+                else
+                {
+                    newData.Health.currentHP = creature.Health.currentHP;
+                }
+
+                creature.Health = newData.Health;
+                creature.name = newData.Name;
+
+                int i = SummonedCreatures.SelectedIndex;
+
+                SummonedCreatures.Items.RemoveAt(i);
+                SummonedCreatures.Items.Insert(i, creature);
+            }
+            else
+            {
+                for(int i = 0; i<summonedCreatures.Count; i++)
+                {
+                    summonedCreatures.ElementAt(i).AC = newData.AC;
+                    summonedCreatures.ElementAt(i).atk = newData.atk;
+                    summonedCreatures.ElementAt(i).Health = newData.Health;
+
+                    Preset creature = new Preset("", getSummon().count, 0, 0, 0, 0);
+                    creature.AC = newData.AC;
+                    creature.atk = newData.atk;
+                    newData.Health.RollHP();
+                    creature.Health = newData.Health;
+                    creature.name = SummonedCreatures.Items[i].ToString();
+                    
+                    SummonedCreatures.Items.RemoveAt(i);
+                    SummonedCreatures.Items.Insert(i, creature);
+                }
+            }
         }
     }
 }
