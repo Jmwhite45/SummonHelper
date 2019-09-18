@@ -14,7 +14,8 @@ namespace SummonCore.PresetData
         {
             List<Preset> ret = new List<Preset>();
 
-            ret.Add(new Preset("Hakrim", 1, 5, 2, 4, 3));
+            ret.Add(new Preset("Hakrim(Wolf)", 1, 5, 2, 4, 3));
+            ret.Add(new Preset("Nung(pseudoDragon)", 1, 4, 1, 4, 2));
 
             return ret.ToArray();
         }

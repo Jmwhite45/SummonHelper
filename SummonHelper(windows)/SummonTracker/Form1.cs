@@ -13,6 +13,7 @@ namespace SummonTracker
     public partial class Form1 : Form
     {
         public List<Preset> summonedCreatures = new List<Preset>();
+        public Settings settings = new Settings();
 
         private void addSummon(Preset p)
         {
@@ -252,6 +253,7 @@ namespace SummonTracker
            CreatureModel newData = form.getData();
             bool newHP = form.NewHP();
             form.Close();
+            Random rnd = new Random();
 
             if(All == false)
             {
@@ -266,7 +268,7 @@ namespace SummonTracker
 
                 if (newHP == true)
                 {
-                    newData.Health.RollHP();
+                    newData.Health.RollHP(rnd,settings);
                 }
                 else
                 {
@@ -287,15 +289,17 @@ namespace SummonTracker
                 {
                     summonedCreatures.ElementAt(i).AC = newData.AC;
                     summonedCreatures.ElementAt(i).atk = newData.atk;
-                    summonedCreatures.ElementAt(i).Health = newData.Health;
+                    summonedCreatures.ElementAt(i).Health.DiceType = newData.Health.DiceType;
+                    summonedCreatures.ElementAt(i).Health.HPMod = newData.Health.HPMod;
+                    summonedCreatures.ElementAt(i).Health.NumDice = newData.Health.NumDice;
 
-                    Preset creature = new Preset("", getSummon().count, 0, 0, 0, 0);
-                    creature.AC = newData.AC;
-                    creature.atk = newData.atk;
-                    newData.Health.RollHP();
-                    creature.Health = newData.Health;
-                    creature.name = SummonedCreatures.Items[i].ToString();
-                    
+                    if (newHP == true)
+                    {
+                        summonedCreatures.ElementAt(i).Health.RollHP(rnd,settings);
+                    }
+
+
+                    Preset creature = summonedCreatures.ElementAt(i);
                     SummonedCreatures.Items.RemoveAt(i);
                     SummonedCreatures.Items.Insert(i, creature);
                 }

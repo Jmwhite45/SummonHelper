@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\Settings.cs" />
     <Compile Include="PresetData\ActiveSpells.cs" />
     <Compile Include="Model\Atk.cs" />
     <Compile Include="Model\CreatureModel.cs" />

@@ -14,26 +14,33 @@ namespace SummonCore.Model
 
         public int currentHP { get; set; }
 
-        public void RollHP()
+        public void RollHP(Random rnd, Settings settings)
         {
-            Random rnd = new Random();
             int ret = HPMod;
 
             for (int i = 0; i < NumDice; i++)
             {
                 ret += rnd.Next(1, DiceType + 1);
+                if (settings.Druidlv6 == true)
+                {
+                    ret += 2;
+                }
+            }
+            if(settings.Wizardlv14 == true)
+            {
+                ret += 30;
             }
 
             currentHP = ret;
         }
 
-        public HP(int num,int dice, int mod)
+        public HP(int num,int dice, int mod, Settings settings)
         {
             NumDice = num;
             DiceType = dice;
             HPMod = mod;
 
-            RollHP();
+            RollHP(new Random(), settings);
         }
         public HP()
         {
